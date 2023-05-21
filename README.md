@@ -1,4 +1,30 @@
 # docker
+1. Создаем Docker-образ 
+docker build -t practice:1.0.0 .
+
+2. Запускаем контейнер 
+docker run -d --name practice -p 8080:8000 practice:1.0.0
+
+3. Переходим по адресу http://127.0.0.1:8080/hello.html 
+Видим "Hello world"
+
+4. Выкладываем образ на Docker Hub
+docker login
+docker tag practice:1.0.0 alexey14011/practice:1.0.0
+docker push alexey14011/practice:1.0.0
+
+5. Создаем deployment.yaml файл
+
+6. Применяем манифест 
+kubectl apply -f deployment.yaml
+
+7. Обеспечиваем доступ к web-приложению
+kubectl port-forward --address 0.0.0.0 deployment/web 8080:8000
+
+8. Результат выполнения кода kubectl describe deployment web”
+
+
+
 
 
 Name:                   web
