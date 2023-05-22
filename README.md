@@ -26,7 +26,7 @@ kubectl port-forward --address 0.0.0.0 deployment/web 8080:8000
 
 
 
-
+PS C:\Users\Alexey\Desktop\study\ИТМО\devops\docker> kubectl describe deployment web
 Name:                   web
 Namespace:              default
 CreationTimestamp:      Mon, 22 May 2023 01:52:21 +0300
